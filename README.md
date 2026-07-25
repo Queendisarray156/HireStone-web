@@ -1,4 +1,5 @@
 # HireStone : A Job Posting and Hiring Plateform
+[![Netlify Status](https://api.netlify.com/api/v1/badges/bfdc31f0-57c5-4fa4-83d0-dcb73faf75a6/deploy-status)](https://app.netlify.com/projects/hirestone/deploys)
 
 A *Frontend Website* built with Next.js 16 (App Router) + TypeScript + Tailwind for a Job Posting and Hiring Plateform named **HireStone** having a FastAPI backend.
 
