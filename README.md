@@ -1,6 +1,6 @@
 # Niyog — Job Board Frontend
 
-Next.js 14 (App Router) + TypeScript + Tailwind frontend for the job-board FastAPI backend.
+Next.js 15 (App Router) + TypeScript + Tailwind frontend for the job-board FastAPI backend.
 
 ## Stack
 
