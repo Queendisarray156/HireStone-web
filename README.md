@@ -1,10 +1,10 @@
 # Niyog — Job Board Frontend
 
-Next.js 15 (App Router) + TypeScript + Tailwind frontend for the job-board FastAPI backend.
+Next.js 16 (App Router) + TypeScript + Tailwind frontend for the job-board FastAPI backend.
 
 ## Stack
 
-- Next.js 14 App Router, TypeScript
+- Next.js 16 App Router, TypeScript
 - Tailwind CSS, custom design tokens (brand navy + accent emerald, see `tailwind.config.ts`)
 - Hand-rolled shadcn-style UI primitives on Radix (`src/components/ui`) — Button, Input,
   Select, Tabs, Dialog, Dropdown, Badge, Card, Label, Textarea
