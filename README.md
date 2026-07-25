@@ -1,4 +1,4 @@
-# Niyog : Job Board Frontend
+# Niyog -- a Job Posting and Hiring Plateform
 
 Next.js 16 (App Router) + TypeScript + Tailwind frontend for the job-board FastAPI backend.
 
