@@ -9,7 +9,7 @@ const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 const mono = IBM_Plex_Mono({ subsets: ["latin"], weight: ["400", "500"], variable: "--font-mono" });
 
 export const metadata: Metadata = {
-  title: "Hirebase — Find your next role",
+  title: "HireStone — Find your next role",
   description: "Search open roles, apply in minutes, track every application in one place.",
 };
 
