@@ -1,6 +1,6 @@
 # Niyog : A Job Posting and Hiring Plateform
 
-Next.js 16 (App Router) + TypeScript + Tailwind *frontend website* for the **Niyog** FastAPI backend, a Job Posting and Hiring Plateform.
+Next.js 16 (App Router) + TypeScript + Tailwind  * frontend website *  for the **Niyog** FastAPI backend, a Job Posting and Hiring Plateform.
 
 ## Stack
 
