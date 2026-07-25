@@ -12,7 +12,7 @@ Next.js 16 (App Router) + TypeScript + Tailwind *frontend website* for the **Niy
 - Axios client with Bearer-token interceptor (`src/lib/api.ts`)
 - `sonner` for toasts, `lucide-react` for icons
 
-## Pages built (basic tier)
+## Pages Built (BASIC TIER)
 
 - `/` — hero + quick search
 - `/jobs` — search with keyword/location/job-type/remote filters, pagination
@@ -35,7 +35,7 @@ cp .env.example .env.local   # point NEXT_PUBLIC_API_URL at your FastAPI backend
 npm run dev
 ```
 
-## Auth model (read before hardening)
+## Auth Model (read before hardening)
 
 Token + user info are stored in a plain (non-httpOnly) cookie so client components
 can read it and attach `Authorization: Bearer <token>` on every API call directly
@@ -53,7 +53,7 @@ Set `NEXT_PUBLIC_API_URL` as an environment variable in the Netlify site setting
 to your deployed FastAPI URL (must allow CORS from your Netlify domain — already
 wide open in the backend's `CORSMiddleware`, tighten `allow_origins` for prod).
 
-## Known gaps (next pass)
+## Known Gaps (Upcoming Version)
 
 - No `react-hook-form` + `zod` yet — forms are controlled state with native HTML
   validation. Fine for basic tier, worth adding for richer error messaging.
