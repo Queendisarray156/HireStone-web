@@ -17,7 +17,7 @@ Next.js 16 (App Router) + TypeScript + Tailwind frontend for the job-board FastA
 - `/` — hero + quick search
 - `/jobs` — search with keyword/location/job-type/remote filters, pagination
 - `/jobs/[id]` — job detail + apply dialog (resume picker + cover letter)
-- `/login`, `/register`, `/register/candidate`, `/register/employer`
+- `/login`, `/register`, `/register/candidate`, `/register/employer` — Role Authentication and Authorization
 - `/dashboard/candidate` — applications (with the pipeline stepper) + profile tab
 - `/dashboard/candidate/resumes` — upload, set primary, delete
 - `/dashboard/employer` — post job dialog, job list, open/close toggle
