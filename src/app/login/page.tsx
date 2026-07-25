@@ -59,7 +59,7 @@ function LoginPageInner() {
           <span className="flex h-10 w-10 items-center justify-center rounded-md bg-brand-500 text-white">
             <Briefcase className="h-5 w-5" />
           </span>
-          <h1 className="mt-4 text-xl font-semibold text-ink">Log in to Hirebase</h1>
+          <h1 className="mt-4 text-xl font-semibold text-ink">Log in to HireStone</h1>
         </div>
 
         <form onSubmit={handleSubmit} className="space-y-4">

@@ -28,7 +28,7 @@ export function Navbar() {
           <span className="flex h-8 w-8 items-center justify-center rounded-md bg-brand-500 text-white">
             <Briefcase className="h-4 w-4" />
           </span>
-          <span className="text-[17px] tracking-tight">Hirebase</span>
+          <span className="text-[17px] tracking-tight">HireStone</span>
         </Link>
 
         <nav className="hidden md:flex items-center gap-1">

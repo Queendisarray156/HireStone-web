@@ -6,7 +6,7 @@ export default function RegisterChoicePage() {
     <div className="container flex justify-center py-16">
       <div className="w-full max-w-md">
         <h1 className="text-xl font-semibold text-ink text-center">Create your account</h1>
-        <p className="mt-1 text-sm text-ink-soft text-center">Choose how you'll use Hirebase.</p>
+        <p className="mt-1 text-sm text-ink-soft text-center">Choose how you'll use HireStone.</p>
 
         <div className="mt-8 grid gap-4">
           <Link
